@@ -1,12 +1,16 @@
 .hero {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 93px;
+  margin-bottom: 60px;
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 
   &-img {
-    padding-top: 153px;
-    height: 600px;
-    max-width: 1600px;
+    padding-top: 118px;
+    height: 400px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-color: $background-hero;
@@ -15,16 +19,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include for-size(tablet-landscape) {
+      max-width: 768px;
+    }
+    @include for-size(desktop) {
+      padding-top: 200px;
+      height: 600px;
+      max-width: 1600px;
+    }
   }
 
   &-title {
-    margin-top: 0px;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
     color: $primary-white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @include for-size(desktop) {
+      font-size: 44px;
+    }
   }
 }

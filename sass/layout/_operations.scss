@@ -1,3 +1,10 @@
+.operations-for-mobile {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
 .our-work {
   display: flex;
 

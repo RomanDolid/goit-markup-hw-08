@@ -6,6 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  // outline: 2px solid tomato;
 }
 
 body {
@@ -42,17 +43,27 @@ img {
 .team,
 .clients {
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+  
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 }
 
 .operations .title,
 .team .title,
 .clients .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }

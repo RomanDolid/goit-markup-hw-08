@@ -1,12 +1,28 @@
 .excellence {
-  display: flex;
 
-  .item + .item {
-    margin-left: 30px;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .item {
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @include for-size(desktop) {
+      width: calc((100% - 8 * 15px) / 4);
+    }
+    &:not(:last-child) {
+      @include for-size(phone-only) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   .title {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -26,11 +42,13 @@
 }
 
 .icone {
-  display: inline-block;
-  padding: 25px 100px;
-  width: 270px;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: $beck-btn-portfolio;
   margin-bottom: 30px;
+  border-radius: 4px;
+  text-align: center;
 
   .icon {
     width: 70px;
