@@ -1,0 +1,58 @@
+.page-heder {
+  border-bottom: 1px solid $boder-line-head;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+
+  .item + .item {
+    margin-left: 50px;
+  }
+  .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+}
+
+.list .current-studio {
+  position: relative;
+  color: $accent-color;
+}
+.current-studio::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+
+.list .current-portfolio {
+  color: $accent-color;
+  display: block;
+  position: relative;
+}
+
+.current-portfolio::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}

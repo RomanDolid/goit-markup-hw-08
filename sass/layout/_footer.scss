@@ -1,0 +1,79 @@
+.main-futer-nav {
+  display: flex;
+}
+
+.futer-nav {
+  background-color: $beck-futer-color;
+  color: $primary-white-color;
+
+  .adress {
+    color: $primary-white-color;
+    text-decoration: none;
+  }
+
+  .link {
+    color: $accent-futer-color;
+  }
+
+  .contakts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
+
+.futer-address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.futer-link {
+  padding-top: 72px;
+  padding-bottom: 100px;
+  margin-right: 94px;
+  margin-left: 69px;
+
+  .list {
+    width: 206px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.foter-account {
+  padding-top: 72px;
+  padding-bottom: 94px;
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.futer-flex-btn {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+}
+
+.fly {
+  width: 24px;
+  height: 24px;
+  fill: $primary-white-color;
+  margin-left: 10px;
+}

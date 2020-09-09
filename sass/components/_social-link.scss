@@ -1,0 +1,46 @@
+.team-link {
+  display: flex;
+  justify-content: space-between;
+
+  &.list .item + .item {
+    margin-left: 10px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+
+.our-link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: $primary-white-color;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $hover-color-link;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}

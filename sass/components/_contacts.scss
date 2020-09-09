@@ -1,0 +1,45 @@
+.contakts {
+  margin-left: auto;
+
+  .link {
+    color: $title-text-color;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+.auth-nav {
+  display: flex;
+
+  .link {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+
+.mail-icon {
+  width: 16px;
+  height: 11px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 15px;
+  fill: currentColor;
+  margin-right: 10px;
+}

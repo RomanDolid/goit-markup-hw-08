@@ -1,0 +1,27 @@
+.our-clients {
+  display: flex;
+  align-items: stretch;
+
+  .item + .item {
+    margin-left: 30px;
+  }
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 170px;
+  height: 90px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid $second-border-colo;
+  box-sizing: border-box;
+  fill: $second-border-colo;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
