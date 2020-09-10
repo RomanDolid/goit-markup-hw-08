@@ -37,6 +37,7 @@
   border-radius: 4px;
   border-color: transparent;
   padding: 6px 22px;
+  margin: 8px;
   color: $primary-text-color;
   background-color: $beck-btn-portfolio;
   font-weight: 500;
@@ -44,6 +45,10 @@
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @include for-size(tablet-landscape) {
+    margin: 0;
+  }
 
   &:hover,
   &:focus {
