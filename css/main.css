@@ -662,6 +662,13 @@ img {
   }
 }
 
+@media (max-width: 449px) {
+  .modal {
+    width: 100%;
+    min-height: 609px;
+  }
+}
+
 .btn-close {
   position: absolute;
   width: 30px;
