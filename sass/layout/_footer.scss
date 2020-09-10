@@ -1,13 +1,6 @@
 .futer-nav {
-  @include for-size(tablet-landscape) {
-    display: flex;
-  }
-}
-
-.futer-nav {
   background-color: $beck-futer-color;
   color: $primary-white-color;
-
   text-align: center;
 
   .adress {
@@ -20,64 +13,101 @@
   }
 
   .contakts {
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
+  .title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 20px;
+
+    @include for-size(desktop) {
+      text-align: left;
+    }
+  }
+}
+.main-futer-nav {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.for-tablet {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 76px;
+    margin-right: 89px;
+  }
+  @include for-size(desktop) {
+    width: 50%;
+    margin: 0;
+    margin-right: 93px;
+  }
 }
 
 .futer-address {
   padding-top: 60px;
-  padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    text-align: left;
+    padding-bottom: 60px;
+  }
 }
 
 .futer-link {
+  padding-top: 60px;
+
+  @include for-size(tablet-landscape) {
+    padding-top: 65px;
+  }
+  @include for-size(desktop) {
+    padding-top: 72px;
+  }
+
+  .list {
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   // padding-top: 72px;
   // padding-bottom: 100px;
   // margin-right: 94px;
   // margin-left: 69px;
-
-  .list {
-    // width: 206px;
-  }
-
-  .title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    // margin-top: 0;
-    // margin-bottom: 10px;
-  }
 }
 
 .foter-account {
-  // padding-top: 72px;
-  // padding-bottom: 94px;
-
-  .title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    // margin-top: 0;
-    // margin-bottom: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include for-size(desktop) {
+    padding-top: 72px;
+    padding-bottom: 0;
   }
 }
 
 .futer-flex-btn {
-  // display: flex;
-  // margin-top: 20px;
-  // flex-direction: row;
+  display: flex;
+  flex-direction: column;
+
+  @include for-size(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .fly {
   width: 24px;
   height: 24px;
   fill: $primary-white-color;
-  // margin-left: 10px;
+  margin-left: 10px;
 }

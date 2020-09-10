@@ -31,12 +31,13 @@
   }
 
   .link {
-    color: $second-border-colo;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: $second-border-colo;
   }
 }
 
@@ -48,7 +49,7 @@
     margin: -15px;
   }
 
-  .item {
+  .item-team {
     @include for-size(tablet-landscape) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
@@ -78,6 +79,7 @@
     }
     @include for-size(desktop) {
       width: 270px;
+      padding-bottom: 30px;
     }
 
   .list {

@@ -1,9 +1,10 @@
 .team-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  
 
   &.list .item + .item {
-    // margin-left: 10px;
+    margin-left: 10px;
   }
   .icon {
     width: 20px;
@@ -22,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   // margin-top: 20px;
-
+  
   .icon {
     width: 20px;
     height: 20px;
@@ -30,11 +31,11 @@
   }
 
   .link {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // width: 44px;
-    // height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: $hover-color-link;
 

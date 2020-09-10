@@ -1,46 +1,72 @@
 .contakts {
-  margin-left: auto;
+  @include for-size(tablet-landscape) {
+    margin-left: auto;
+  }
 
   .link {
     color: $title-text-color;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
+
+    @include for-size(desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 }
 
 .auth-nav {
   display: none;
-  // display: flex;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .link {
-    // display: flex;
-    // align-items: center;
+    @include for-size(tablet-landscape) {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+    }
 
     &:hover,
     &:focus {
       color: $accent-color;
     }
   }
-  
+
   .item + .item {
-    // margin-left: 30px;
+    @include for-size(desktop) {
+      margin-left: 30px;
+    }
   }
 }
 
 .mail-icon {
-  width: 16px;
-  height: 11px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
   margin-right: 10px;
+
+  @include for-size(desktop) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .tel-icon {
   width: 10px;
-  height: 15px;
+  height: 14px;
   fill: currentColor;
   margin-right: 10px;
+
+  @include for-size(desktop) {
+    width: 10px;
+    height: 16px;
+  }
 }
