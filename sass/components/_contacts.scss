@@ -31,7 +31,11 @@
     @include for-size(tablet-landscape) {
       display: flex;
       align-items: center;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    @include for-size(desktop) {
+      padding: 0;
     }
 
     &:hover,

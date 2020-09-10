@@ -506,7 +506,14 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .auth-nav .link {
+    padding: 0;
   }
 }
 
@@ -619,12 +626,18 @@ img {
 }
 
 .form b {
-  font-size: 20px;
   text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1200px) {
+  .form b {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -667,7 +680,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 448px;
+  width: 100%;
   height: 40px;
   padding: 0;
   padding-left: 42px;
@@ -737,10 +750,17 @@ img {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-label a {
@@ -753,9 +773,14 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  margin-left: 12px;
   border: 2px solid #212121;
   border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .check-icon {
+    margin-left: 12px;
+  }
 }
 
 .checkbox-input {
