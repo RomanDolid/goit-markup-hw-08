@@ -1,8 +1,12 @@
 .contakts {
+  display: block;
   @include for-size(tablet-landscape) {
+    display: flex;
+  }
+  @include for-size(desktop) {
+    padding: 0;
     margin-left: auto;
   }
-
   .link {
     color: $title-text-color;
     text-decoration: none;
@@ -20,22 +24,23 @@
 }
 
 .auth-nav {
-  display: none;
-
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 21px 0;
   }
 
   .link {
     @include for-size(tablet-landscape) {
       display: flex;
       align-items: center;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      // padding-top: 5px;
+      // padding-bottom: 5px;
     }
-    @include for-size(desktop) {
-      padding: 0;
+    @include for-size(phone-only) {
+      font-size: 18px;
+      line-height: 1.17;
     }
 
     &:hover,
@@ -43,20 +48,36 @@
       color: $accent-color;
     }
   }
-
-  .item + .item {
-    @include for-size(desktop) {
-      margin-left: 30px;
+  .item:first-child {
+    @include for-size(phone-only) {
+      display: block;
+      padding-bottom: 16px;
     }
   }
+  
+.item + .item {
+  @include for-size(tablet-landscape) {
+    padding-top: 10px;
+  }
+  @include for-size(desktop) {
+    padding: 0;
+    margin-left: 30px;
+  }
+}
 }
 
+
+
 .mail-icon {
-  width: 14px;
-  height: 10px;
+  width: 16px;
+  height: 12px;
   fill: currentColor;
   margin-right: 10px;
 
+  @include for-size(tablet-landscape) {
+    width: 14px;
+    height: 10px;
+  }
   @include for-size(desktop) {
     width: 16px;
     height: 12px;
@@ -65,10 +86,13 @@
 
 .tel-icon {
   width: 10px;
-  height: 14px;
+  height: 16px;
   fill: currentColor;
   margin-right: 10px;
-
+  @include for-size(tablet-landscape) {
+    width: 10px;
+    height: 14px;
+  }
   @include for-size(desktop) {
     width: 10px;
     height: 16px;

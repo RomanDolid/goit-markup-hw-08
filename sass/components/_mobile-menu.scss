@@ -1,0 +1,50 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  align-self: center;
+  width: 40px;
+  height: 40px;
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.mobile-menu-container {
+  // общие стили
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    width: 100%;
+  }
+
+
+  @include for-size(phone-only) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 393px;
+    border-top: 1px solid #ececec;
+    background-color: $primary-white-color;
+    padding: 60px 0px;
+
+    &.is-open {
+      display: block;
+      text-align: center;
+    }
+  }
+}

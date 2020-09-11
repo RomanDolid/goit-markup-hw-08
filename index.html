@@ -17,32 +17,44 @@
     <div class="container">
       <nav class="main-nav">
         <a href="./index.html" id="logotip" class="logo"><span class="first-word">Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link current-studio">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
 
-        <address class="contakts">
-          <ul class="auth-nav list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" target="_blank" rel="noopener" class="link">
-                <svg class="icon mail-icon">
-                  <use xlink:href="./images/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" target="_blank" rel="noopener" class="link">
-                <svg class="icon tel-icon">
-                  <use xlink:href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-menu-container"
+          data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu-container is-open" data-menu>
+
+          <ul class="site-nav list">
+            <li class="item"><a href="./index.html" class="link current-studio">Студия</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </address>
+
+          <address class="contakts">
+            <ul class="auth-nav list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" target="_blank" rel="noopener" class="link">
+                  <svg class="icon mail-icon">
+                    <use xlink:href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" target="_blank" rel="noopener" class="link">
+                  <svg class="icon tel-icon">
+                    <use xlink:href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </nav>
     </div>
   </header>
@@ -417,6 +429,7 @@
   </footer>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
