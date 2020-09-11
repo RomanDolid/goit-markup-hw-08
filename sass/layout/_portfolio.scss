@@ -47,7 +47,7 @@
   }
 
   .item {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
 
     @include for-size(tablet-landscape) {
