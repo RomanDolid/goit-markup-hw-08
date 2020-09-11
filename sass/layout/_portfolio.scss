@@ -29,6 +29,7 @@
 }
 
 .flex-list {
+  display: block;
   margin-bottom: 60px;
 
   @include for-size(tablet-landscape) {

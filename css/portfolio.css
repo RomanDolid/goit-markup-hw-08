@@ -426,6 +426,15 @@ img {
   }
 }
 
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
+}
+
+.icon-cross,
+.icon-menu {
+  fill: currentColor;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -1087,8 +1096,8 @@ img {
 
 @media (max-width: 767px) {
   .site-nav .link {
-    padding-top: 0;
-    padding-bottom: 40px;
+    padding: 0;
+    margin-bottom: 40px;
     font-size: 18px;
     line-height: 1.17;
   }
@@ -1098,30 +1107,40 @@ img {
   color: #2196f3;
 }
 
-@media (min-width: 768px) {
+.list .current-studio,
+.list .current-portfolio {
+  position: relative;
+  color: #2196f3;
+}
+
+@media (max-width: 767px) {
   .list .current-studio,
   .list .current-portfolio {
-    position: relative;
-    color: #2196f3;
+    display: inline-block;
+    padding-bottom: 8px;
   }
 }
 
-@media (min-width: 768px) {
-  .current-studio::before,
-  .current-portfolio::before {
-    position: absolute;
-    bottom: 0;
-    content: "";
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-  }
+.current-studio::before,
+.current-portfolio::before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
 }
 
 .product-overlay {
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .product-overlay {
+    z-index: -1;
+  }
 }
 
 .product-overlay::before {
@@ -1221,6 +1240,7 @@ img {
 }
 
 .flex-list {
+  display: block;
   margin-bottom: 60px;
 }
 
