@@ -36,12 +36,14 @@
     }
   }
 }
+
 .main-futer-nav {
   @include for-size(desktop) {
     display: flex;
     justify-content: space-between;
   }
 }
+
 .for-tablet {
   @include for-size(tablet-landscape) {
     display: flex;
@@ -49,6 +51,7 @@
     margin-left: 76px;
     margin-right: 89px;
   }
+
   @include for-size(desktop) {
     width: 50%;
     margin: 0;
@@ -71,6 +74,7 @@
   @include for-size(tablet-landscape) {
     padding-top: 65px;
   }
+
   @include for-size(desktop) {
     padding-top: 72px;
   }
@@ -79,16 +83,13 @@
     width: 206px;
     margin-right: auto;
     margin-left: auto;
-  }
-  // padding-top: 72px;
-  // padding-bottom: 100px;
-  // margin-right: 94px;
-  // margin-left: 69px;
+  }  
 }
 
 .foter-account {
   padding-top: 60px;
   padding-bottom: 60px;
+  
   @include for-size(desktop) {
     padding-top: 72px;
     padding-bottom: 0;

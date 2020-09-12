@@ -1,6 +1,7 @@
 .product-overlay {
   position: relative;
   overflow: hidden;
+
   @include for-size(phone-only) {
     z-index: -1;
   }

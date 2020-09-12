@@ -165,15 +165,34 @@
         <h2 class="title">Чем мы занимаемся</h2>
         <ul class="list our-work">
           <li class="item">
-            <img src="./images/leptop.jpg" alt="десктоп" width="370">
+            <picture>
+              <source srcset="./images/desktop/leptop.jpg 1x, ./images/desktop/leptop@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/leptop.jpg 1x, ./images/tablet/leptop@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/leptop.jpg 1x, ./images/mobile/leptop@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <img src="./images/desktop/leptop.jpg" alt="десктоп" width="370">
+            </picture>
+
             <p class="text">Десктопные приложения</p>
           </li>
           <li class="item">
-            <img src="./images/smart.jpg" alt="мобильные" width="370">
+            <picture>
+              <source srcset="./images/desktop/smart.jpg 1x, ./images/desktop/smart@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/smart.jpg 1x, ./images/tablet/smart@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/mobile/smart.jpg 1x, ./images/mobile/smart@2x.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/desktop/smart.jpg" alt="мобильные" width="370">
+            </picture>
             <p class="text">Мобильные приложения</p>
           </li>
           <li class="item">
-            <img src="./images/PC.jpg" alt="дизайнерские" width="370">
+            <picture>
+              <source srcset="./images/desktop/PC.jpg 1x, ./images/desktop/PC@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/PC.jpg 1x, ./images/tablet/PC@2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/mobile/PC.jpg 1x, ./images/mobile/PC@2x.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/desktop/PC.jpg" alt="дизайнерские" width="370">
+            </picture>        
             <p class="text">Дизайнерские решения</p>
           </li>
         </ul>
@@ -186,7 +205,12 @@
         <ul class="list our-team">
           <li class="item-team">
             <div class="container-persons">
-              <img src="./images/kucherenko.jpg" alt="Демьяненко">
+              <picture>
+                <source srcset="./images/desktop/kucherenko.jpg 1x, ./images/desktop/kucherenko@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/kucherenko.jpg 1x, ./images/tablet/kucherenko@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/kucherenko.jpg 1x, ./images/mobile/kucherenko@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/desktop/kucherenko.jpg" alt="Демьяненко">
+              </picture> 
               <h3 class="team-persons">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
               <ul class="list team-link">
@@ -219,7 +243,12 @@
           </li>
           <li class="item-team">
             <div class="container-persons">
-              <img src="./images/ivanova.jpg" alt="Репина">
+              <picture>
+                <source srcset="./images/desktop/ivanova.jpg 1x, ./images/desktop/ivanova@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/ivanova.jpg 1x, ./images/tablet/ivanova@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/ivanova.jpg 1x, ./images/mobile/ivanova@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/desktop/ivanova.jpg" alt="Репина">
+              </picture> 
               <h3 class="team-persons">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
               <ul class="list team-link">
@@ -252,7 +281,12 @@
           </li>
           <li class="item-team">
             <div class="container-persons">
-              <img src="./images/schevchenko.jpg" alt="Тарасов">
+              <picture>
+                <source srcset="./images/desktop/schevchenko.jpg 1x, ./images/desktop/schevchenko@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/schevchenko.jpg 1x, ./images/tablet/schevchenko@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/schevchenko.jpg 1x, ./images/mobile/schevchenko@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/desktop/schevchenko.jpg" alt="Тарасов">
+              </picture> 
               <h3 class="team-persons">Николай Тарасов</h3>
               <p class="text">Marketing</p>
               <ul class="list team-link">
@@ -285,7 +319,12 @@
           </li>
           <li class="item-team">
             <div class="container-persons">
-              <img src="./images/nikolaev.jpg" alt="Ермаков">
+              <picture>
+                <source srcset="./images/desktop/nikolaev.jpg 1x, ./images/desktop/nikolaev@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/nikolaev.jpg 1x, ./images/tablet/nikolaev@2x.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobile/nikolaev.jpg 1x, ./images/mobile/nikolaev@2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/desktop/nikolaev.jpg" alt="Ермаков">
+              </picture> 
               <h3 class="team-persons">Михаил Ермаков</h3>
               <p class="text">UI Designer</p>
               <ul class="list team-link">

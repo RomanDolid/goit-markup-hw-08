@@ -117,6 +117,7 @@
     font-size: 14px;
     line-height: 1.71;
   }
+
   a {
     color: $accent-color;
     text-decoration: underline;
@@ -177,6 +178,7 @@
   @include for-size(tablet-landscape) {
     width: 450px;
   }
+  
   @include for-size(desktop) {
     width: 358px;
     margin-right: 12px;

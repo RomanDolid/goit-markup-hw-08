@@ -1,12 +1,15 @@
 .contakts {
   display: block;
+
   @include for-size(tablet-landscape) {
     display: flex;
   }
+
   @include for-size(desktop) {
     padding: 0;
     margin-left: auto;
   }
+
   .link {
     color: $title-text-color;
     text-decoration: none;
@@ -35,9 +38,8 @@
     @include for-size(tablet-landscape) {
       display: flex;
       align-items: center;
-      // padding-top: 5px;
-      // padding-bottom: 5px;
     }
+
     @include for-size(phone-only) {
       font-size: 18px;
       line-height: 1.17;
@@ -48,25 +50,25 @@
       color: $accent-color;
     }
   }
+
   .item:first-child {
     @include for-size(phone-only) {
       display: block;
       padding-bottom: 16px;
     }
   }
-  
-.item + .item {
-  @include for-size(tablet-landscape) {
-    padding-top: 10px;
-  }
-  @include for-size(desktop) {
-    padding: 0;
-    margin-left: 30px;
+
+  .item + .item {
+    @include for-size(tablet-landscape) {
+      padding-top: 10px;
+    }
+
+    @include for-size(desktop) {
+      padding: 0;
+      margin-left: 30px;
+    }
   }
 }
-}
-
-
 
 .mail-icon {
   width: 16px;
@@ -78,6 +80,7 @@
     width: 14px;
     height: 10px;
   }
+
   @include for-size(desktop) {
     width: 16px;
     height: 12px;
@@ -89,10 +92,12 @@
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
+
   @include for-size(tablet-landscape) {
     width: 10px;
     height: 14px;
   }
+  
   @include for-size(desktop) {
     width: 10px;
     height: 16px;

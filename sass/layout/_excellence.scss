@@ -1,5 +1,4 @@
 .excellence {
-
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
@@ -11,9 +10,11 @@
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
     }
+
     @include for-size(desktop) {
       width: calc((100% - 8 * 15px) / 4);
     }
+    
     &:not(:last-child) {
       @include for-size(phone-only) {
         margin-bottom: 30px;

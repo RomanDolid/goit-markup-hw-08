@@ -6,16 +6,15 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  // outline: 2px solid teal;
 }
 
 body {
   margin: 0;
   background-color: $primary-white-color;
   color: $primary-text-color;
-
   font-family: "Roboto", sans-serif;
 }
+
 body.modal-open {
   overflow: hidden;
 }
@@ -47,7 +46,7 @@ img {
 .clients {
   margin-top: 0;
   margin-bottom: 60px;
-  
+
   @include for-size(desktop) {
     margin-bottom: 94px;
   }
